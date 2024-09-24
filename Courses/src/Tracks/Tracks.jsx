@@ -36,34 +36,18 @@ function Tracks() {
         textAlign: 'center',
     };
 
-    const skillTitle = {
+    const trackTitle = {
         fontFamily: 'Inter, sans-serif',
         fontWeight: 600,
         fontSize: '25px',
         textAlign: 'center',
     };
 
-    const skillSubTitle = {
-        color: '#662E9B',
-        fontFamily: 'Inter, sans-serif',
-        fontWeight: 600,
-        fontSize: '15px',
-        textAlign: 'center',
-    };
-
-    const skillParagraph = {
+    const trackParagraph = {
         fontFamily: 'Inter, sans-serif',
         fontWeight: 600,
         fontSize: '13px',
         textAlign: 'center',
-    };
-
-    const skillList = {
-        textAlign: 'center',
-        padding: 0,
-        fontWeight: 600,
-        fontSize: '15px',
-        listStyleType: 'none',
     };
 
     const imageWrapper = {
@@ -136,24 +120,10 @@ function Tracks() {
                 <div style={imageWrapper}>
                         <img style={Logo} src={FrontEndLogo} alt="Frontend Logo" />
                 </div>
-                <h4 style={skillTitle}>Frontend Development</h4>
-                <p style={skillParagraph}>
+                <h4 style={trackTitle}>Data Science</h4>
+                <p style={trackParagraph}>
                     I like to code things from scratch, and enjoy bringing ideas to life in the browser
                 </p>
-                <h4 style={skillSubTitle}>Programming Languages:</h4>
-                <div>
-                    <ul style={skillList}>
-                        <li>HTML & CSS</li>
-                        <li>Javascript</li>
-                        <li>Vite + React</li>
-                        <li>Bootstrap</li>
-                    </ul>
-                </div>
-                <h5 style={skillSubTitle}>Frontend Tools:</h5>
-                <ul style={skillList}>
-                    <li>VSCode</li>
-                    <li>Netbeans</li>
-                </ul>
                 </Item>
                 </Grid>
                 <Grid item lg={4} md={6} sm={12}>
@@ -161,26 +131,10 @@ function Tracks() {
                 <div style={imageWrapper}>
                     <img style={Logo} src={BackEndLogo} alt="Backend Logo" />
                 </div>
-                <h4 style={skillTitle}>Backend Development</h4>
-                <p style={skillParagraph}>
+                <h4 style={trackTitle}>Core Science</h4>
+                <p style={trackParagraph}>
                     I enjoy building robust and scalable backend systems to support dynamic and interactive web applications
-                </p>
-                <h4 style={skillSubTitle}>Programming Languages:</h4>
-                <div>
-                    <ul style={skillList}>
-                        <li>Java</li>
-                        <li>Node.JS</li>
-                        <li>Python</li>
-                        <li>MongoDB</li>
-                    </ul>
-                </div>
-                <h5 style={skillSubTitle}>Backend Tools:</h5>
-                <ul style={skillList}>
-                    <li>MongoDBCompass</li>
-                    <li>Glassfish</li>
-                    <li>Postman</li>
-                    <li>Putty</li>
-                </ul>            
+                </p>           
                 </Item>
                 </Grid>
                 <Grid item lg={4} md={6} sm={12}>
@@ -188,22 +142,10 @@ function Tracks() {
                     <div style={imageWrapper}>
                         <img style={Logo} src={GameLogo} alt="Game Logo" />
                     </div>
-                    <h4 style={skillTitle}>Game Development</h4>
-                    <p style={skillParagraph}>
+                    <h4 style={trackTitle}>Game Development</h4>
+                    <p style={trackParagraph}>
                         I have experience in creating interactive games and simulations, bringing virtual worlds to life.
                     </p>
-                    <h4 style={skillSubTitle}>Programming Languages:</h4>
-                    <div>
-                        <ul style={skillList}>
-                            <li>C#</li>
-                            <li>Lua</li>
-                        </ul>
-                    </div>
-                    <h5 style={skillSubTitle}>Game Engines:</h5>
-                    <ul style={skillList}>
-                        <li>Unity</li>
-                        <li>Roblox Studio</li>
-                    </ul>
                 </Item>
                 </Grid>
             </Grid>
