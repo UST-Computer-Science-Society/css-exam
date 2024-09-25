@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Experience.css';
+import './Subjects.css';
 import { height } from '@mui/system';
 import zIndex from '@mui/material/styles/zIndex';
 
@@ -61,7 +61,7 @@ function Experience() {
     return (
         <>
             <div>
-                <h1 style={title} className='section-load-left'>Experience</h1>
+                <h1 style={title} className='section-load-left'>Subjects</h1>
             </div>
             <div style={{ backgroundColor: '#FFFF', padding: '100px 0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'}}>
                 <div className="experience-item section-load-left">

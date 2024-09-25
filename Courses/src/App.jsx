@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Header from './Components/Header.jsx'
 import StartingPage from './StartingPage/StartingPage.jsx'
 import Tracks from './Tracks/Tracks.jsx'
-import Experience from './Experience/Experience.jsx'
+import Subjects from './Subjects/Subjects.jsx'
 import Education from './Education/Education.jsx'
 import Contact from './Contacts/Contacts.jsx'
 import Footer from './Components/Footer.jsx'
@@ -16,7 +16,7 @@ function App() {
       <Header/>
       <StartingPage/>
       <Tracks/>
-      <Experience/>
+      <Subjects/>
       <Education/>
       <Contact/>
       <Footer/>

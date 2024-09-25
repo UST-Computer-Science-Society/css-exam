@@ -71,7 +71,8 @@ function Tracks() {
     };
 
     const Logo = {
-        width: '100%    ',
+        borderRadius:'5%',
+        width: '100%',
     };
 
 
