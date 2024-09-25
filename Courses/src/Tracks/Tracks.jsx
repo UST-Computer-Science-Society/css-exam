@@ -79,6 +79,25 @@ function Tracks() {
         flexDirection: 'column',
     }));
 
+    const learnMoreBtn = {
+        backgroundColor: '#6973DB',
+        border: 'none',
+        borderRadius: '10px',
+        color: '#fff',
+        fontSize: '14px',
+        fontFamily: 'Inter, sans-serif',
+        fontWeight: 600,
+        width: '139.5px',
+        height: '48px',
+        cursor: 'pointer',
+        transition: 'background-color 0.3s ease',
+    };
+
+    const linkMoreBtn = {
+        margin:'0 auto',
+        width:'40%',
+    }
+
     useEffect(() => {
         const handleScroll = () => {
             document.querySelectorAll(".section-load-left").forEach(dataLoad => {
@@ -124,6 +143,9 @@ function Tracks() {
                 <p style={trackParagraph}>
                     I like to code things from scratch, and enjoy bringing ideas to life in the browser
                 </p>
+                <a href="" style={linkMoreBtn}>
+                    <button style={learnMoreBtn}>Learn More</button>
+                </a>
                 </Item>
                 </Grid>
                 <Grid item lg={4} md={6} sm={12}>
@@ -134,18 +156,24 @@ function Tracks() {
                 <h4 style={trackTitle}>Core Science</h4>
                 <p style={trackParagraph}>
                     I enjoy building robust and scalable backend systems to support dynamic and interactive web applications
-                </p>           
+                </p> 
+                <a href="" style={linkMoreBtn}>
+                    <button style={learnMoreBtn}>Learn More</button>
+                </a>    
                 </Item>
                 </Grid>
                 <Grid item lg={4} md={6} sm={12}>
                 <Item style={colStyle}>
-                    <div style={imageWrapper}>
-                        <img style={Logo} src={GameLogo} alt="Game Logo" />
-                    </div>
-                    <h4 style={trackTitle}>Game Development</h4>
-                    <p style={trackParagraph}>
-                        I have experience in creating interactive games and simulations, bringing virtual worlds to life.
-                    </p>
+                <div style={imageWrapper}>
+                    <img style={Logo} src={GameLogo} alt="Game Logo" />
+                </div>
+                <h4 style={trackTitle}>Game Development</h4>
+                <p style={trackParagraph}>
+                    I have experience in creating interactive games and simulations, bringing virtual worlds to life.
+                </p>
+                <a href="" style={linkMoreBtn}>
+                    <button style={learnMoreBtn}>Learn More</button>
+                </a>
                 </Item>
                 </Grid>
             </Grid>
