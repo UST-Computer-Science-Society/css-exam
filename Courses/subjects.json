@@ -1,5 +1,5 @@
 {
-    "DataScience": {
+    "Data Science": {
       "subjects": [
         {
           "code": "CS ELEC 1C",
@@ -15,7 +15,7 @@
         }
       ]
     },
-    "CoreScience": {
+    "Core Science": {
       "subjects": [
         {
           "code": "CS ELEC 1A",
@@ -39,7 +39,7 @@
         }
       ]
     },
-    "GameDevelopment": {
+    "Game Development": {
       "subjects": [
         {
           "code": "CS ELEC 1B",

@@ -31,6 +31,7 @@ const StartingPage = () => {
         alignItems: 'center',
         justifyContent: 'center',
         textAlign: 'center',
+        marginBottom:'240px',
     };
 
     const introStyle = {
@@ -127,9 +128,9 @@ const StartingPage = () => {
                         <a href="#Subjects" style={linkStyle}>#subjects</a>
                     </button>
                 </Nav.Link>
-                <Nav.Link href='#Latestpage'>
+                <Nav.Link href='#LatestPage'>
                     <button style={buttonStyle} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-                        <a href="#Latestpage" style={linkStyle}>#latestpage</a>
+                        <a href="#LatestPage" style={linkStyle}>#latestpage</a>
                     </button>
                 </Nav.Link>
             </div>

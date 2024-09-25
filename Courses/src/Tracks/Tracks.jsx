@@ -30,7 +30,7 @@
             fontFamily: 'Inter, sans-serif',
             fontWeight: 600,
             fontSize: '62.5px',
-            marginTop: '200px',
+            marginTop: '100px',
             marginBottom: '25px',
             textAlign: 'center',
         };

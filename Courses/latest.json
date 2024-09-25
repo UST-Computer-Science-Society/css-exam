@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "New Year's Day",
+        "image": "/src/assets/images/newyear.jpg",
+        "postedDate": "2024-01-01"
+    },
+    {
+        "id": 2,
+        "title": "Summer Holidays",
+        "image": "/src/assets/images/summer.jpg",
+        "postedDate": "2023-06-15"
+    },
+    {
+        "id": 3,
+        "title": "Christmas Eve",
+        "image": "/src/assets/images/christmas.jpg",
+        "postedDate": "2023-12-24"
+    },
+    {
+        "id": 4,
+        "title": "Valentine's Day",
+        "image": "/src/assets/images/valentines.jpg",
+        "postedDate": "2024-02-14"
+    }
+]
