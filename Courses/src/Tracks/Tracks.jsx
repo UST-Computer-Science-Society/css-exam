@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import FrontEndLogo from '../assets/images/web-development.png'
-import BackEndLogo from '../assets/images/servers.png'
-import GameLogo from '../assets/images/console.png'
+// import FrontEndLogo from '../assets/images/web-development.png'
+// import BackEndLogo from '../assets/images/servers.png'
+// import GameLogo from '../assets/images/console.png'
+
+import Core from '../assets/images/core.jpg'
+import Data from '../assets/images/datascience.jpg'
+import Game from '../assets/images/gamedev.jpg'
+
 
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -66,8 +71,7 @@ function Tracks() {
     };
 
     const Logo = {
-        width: '50px',
-        height: '50px',
+        width: '100%    ',
     };
 
 
@@ -137,11 +141,11 @@ function Tracks() {
                 <Grid item lg={4} md={6} sm={12}>
                 <Item style={colStyle}>
                 <div style={imageWrapper}>
-                        <img style={Logo} src={FrontEndLogo} alt="Frontend Logo" />
+                        <img style={Logo} src={Core} alt="Core" />
                 </div>
                 <h4 style={trackTitle}>Data Science</h4>
                 <p style={trackParagraph}>
-                    I like to code things from scratch, and enjoy bringing ideas to life in the browser
+                Data Science involves collecting, analyzing, and interpreting large sets of data to uncover insights. It combines statistics, machine learning, and data analysis techniques to help organizations make informed decisions.
                 </p>
                 <a href="" style={linkMoreBtn}>
                     <button style={learnMoreBtn}>Learn More</button>
@@ -151,11 +155,11 @@ function Tracks() {
                 <Grid item lg={4} md={6} sm={12}>
                 <Item style={colStyle}>
                 <div style={imageWrapper}>
-                    <img style={Logo} src={BackEndLogo} alt="Backend Logo" />
+                    <img style={Logo} src={Data} alt="Data Science" />
                 </div>
                 <h4 style={trackTitle}>Core Science</h4>
                 <p style={trackParagraph}>
-                    I enjoy building robust and scalable backend systems to support dynamic and interactive web applications
+                Core programming refers to fundamental concepts like algorithms, data structures, object-oriented programming (OOP), and memory management. These are foundational skills for building software across different domains.
                 </p> 
                 <a href="" style={linkMoreBtn}>
                     <button style={learnMoreBtn}>Learn More</button>
@@ -165,11 +169,11 @@ function Tracks() {
                 <Grid item lg={4} md={6} sm={12}>
                 <Item style={colStyle}>
                 <div style={imageWrapper}>
-                    <img style={Logo} src={GameLogo} alt="Game Logo" />
+                    <img style={Logo} src={Game} alt="Game" />
                 </div>
                 <h4 style={trackTitle}>Game Development</h4>
                 <p style={trackParagraph}>
-                    I have experience in creating interactive games and simulations, bringing virtual worlds to life.
+                Game Development is the process of designing, creating, and programming video games. It involves game design, coding, art creation, and testing, often using engines like Unity or Unreal.
                 </p>
                 <a href="" style={linkMoreBtn}>
                     <button style={learnMoreBtn}>Learn More</button>
