@@ -17,7 +17,7 @@ const useMediaQuery = (query) => {
 };
 
 const StartingPage = () => {
-    const isSmallScreen = useMediaQuery('(max-width: 900px)');
+    const isSmallScreen = useMediaQuery('(max-width: 600px)');
     const [isHovered, setIsHovered] = useState(false);
 
     // Define grid areas based on screen size

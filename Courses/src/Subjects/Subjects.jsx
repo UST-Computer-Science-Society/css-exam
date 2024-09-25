@@ -1,10 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Subjects.css';
-import { height } from '@mui/system';
-import zIndex from '@mui/material/styles/zIndex';
+import Nav from 'react-bootstrap/Nav';
 
-function Experience() {
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+
+import SubjectsList from '../../subjects.json';
+
+function Subjects() {
     const title = {
+        color: '#287FEB',
         fontFamily: 'Inter, sans-serif',
         fontWeight: 600,
         fontSize: '62.5px',
@@ -13,80 +20,53 @@ function Experience() {
         textAlign: 'center',
     };
 
-    const box = {
-        backgroundColor: '#001011',
-        color: '#ffff',
+    const [selectedButton, setSelectedButton] = useState('');
+
+    const buttonContainerStyle = {
         display: 'flex',
-        width: '60px',
         justifyContent: 'center',
-        marginLeft:'20px',
-        marginRight:'20px',
+        alignItems: 'center',
+        gap: '10px',
+        marginTop: '20px',
     };
 
-    const year = {
-        color: '#ffff',
-        fontSize: '15px',
-        lineHeight: '37px',
-        zIndex:'2',
+    const buttonStyle = (buttonName) => ({
+        backgroundColor: selectedButton === buttonName ? '#FF7F0E' : '#6973DB',
+        border: 'none',
+        borderRadius: '10px',
+        color: '#fff',
+        fontSize: '14px',
+        fontFamily: 'Inter, sans-serif',
+        fontWeight: 600,
+        width: '139.5px',
+        height: '48px',
+        cursor: 'pointer',
+        transition: 'background-color 0.3s ease',
+    });
+
+    const handleButtonClick = (buttonName) => {
+        setSelectedButton(buttonName);
     };
-
-
-    useEffect(() => {
-        const handleScroll = () => {
-            document.querySelectorAll(".section-load-left").forEach(dataLoad => {
-                if (isInView(dataLoad)) {
-                    dataLoad.classList.add("section-load-left--visible");
-                } else {
-                    dataLoad.classList.remove("section-load-left--visible");
-                }
-            });
-        };
-
-        const isInView = (element) => {
-            const rect = element.getBoundingClientRect();
-            return (
-                rect.bottom > 0 &&
-                rect.top < (window.innerHeight - 120 || document.documentElement.clientHeight - 120)
-            );
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        handleScroll(); // Initial check in case the elements are already in view
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);      
 
     return (
         <>
-            <div>
-                <h1 style={title} className='section-load-left'>Subjects</h1>
+            <div id="Subjects">
+                <h1 style={title}>Subjects</h1>
+                <p style={{ textAlign: 'center' }}>Choose the specialization below to see the subjects.</p>
             </div>
-            <div style={{ backgroundColor: '#FFFF', padding: '100px 0', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'}}>
-                <div className="experience-item section-load-left">
-                    <div className='shape-container'>
-                        <div style={box}><h5 style={year}>2024</h5></div>
-                        {/* <div className='triangle'></div>
-                        <div className='circle'></div>
-                        <div className='vertical-line'></div> */}
-                    </div>
-                    <div className="experience-content">
-                        <h2>Full Stack Developer Intern</h2>
-                        <h3>Fildev</h3>
-                        <br />
-                        <ul>
-                            <li>Developed and managed APIs, contributing to both front-end and back-end</li>
-                            <li>Assisted with UI/UX design and implemented features.</li>
-                            <li>Worked on server management using Putty and SSH.</li>
-                            <li>Utilized MongoDB Compass for database management.</li>
-                            <li>Gained proficiency in version control with GitHub.</li>
-                        </ul>
-                    </div>
-                </div>
+            <div style={buttonContainerStyle}>
+                <button style={buttonStyle('Data Science')} onClick={() => handleButtonClick('Data Science')}>
+                    Data Science
+                </button>
+                <button style={buttonStyle('Core Science')} onClick={() => handleButtonClick('Core Science')}>
+                    Core Science
+                </button>
+                <button style={buttonStyle('Game Development')} onClick={() => handleButtonClick('Game Development')}>
+                    Game Development
+                </button>
             </div>
         </>
     );
 }
 
-export default Experience;
+export default Subjects;
