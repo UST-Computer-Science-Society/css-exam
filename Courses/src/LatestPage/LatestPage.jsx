@@ -115,9 +115,8 @@ function LatestPage() {
             <div style={styles.carouselContainer}>
                 <Box className="section-load-left" sx={{ display: 'flex', justifyContent: 'center' }} 
                      style={{ margin: isSmallScreen ? '0 10px' : '0 50px' }}
-                     onClick={handleBoxClick} // Add onClick event
                 >
-                    <div style={styles.carousel}>
+                    <div style={styles.carousel} >
                         {data.map((post, index) => (
                             <div
                                 key={post.id}
@@ -126,6 +125,7 @@ function LatestPage() {
                                     ...getPositionStyles(index),
                                 }}
                                 className="carousel-card"
+                                onClick={handleBoxClick}
                             >
                                 <div style={styles.imageWrapper}>
                                     <img src={post.image} alt={post.title} style={styles.image} />

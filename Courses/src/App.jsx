@@ -23,6 +23,9 @@ function App() {
       
       {/* Routes Setup */}
       <Routes>
+        {/* Navbar route */}
+
+
         {/* Home route */}
         <Route path="/" element={<HomePage />} />
 

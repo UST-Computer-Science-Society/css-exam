@@ -2,12 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Core from '../assets/images/core.jpg';
 import Data from '../assets/images/datascience.jpg';
 import Game from '../assets/images/gamedev.jpg';
-
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-
 import { useNavigate } from 'react-router-dom';
 
 // Custom Hook for media queries
@@ -22,7 +20,6 @@ const useMediaQuery = (query) => {
     return () => mediaQueryList.removeListener(handleChange);
   }, [query]);
 
-  return matches;
 };
 
 // Styled components
@@ -64,11 +61,8 @@ const StyledButton = styled('button')(({ theme, selected }) => ({
   cursor: 'pointer',
   transition: 'all 0.3s ease',
   marginTop: 'auto',
-  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)', // Default shadow
-  '&:hover': {
-    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.3)', // Shadow on button hover
-  },
 }));
+
 
 function Tracks() {
   const isSmallScreen = useMediaQuery('(max-width: 600px)');
@@ -150,7 +144,7 @@ function Tracks() {
 
   const handleBoxClick = () => {
     navigate('/learnmore');
-};
+  };
 
   return (
     <>
@@ -175,7 +169,10 @@ function Tracks() {
                 <div style={linkMoreBtn}>
                   <StyledButton
                     selected={selectedButton === 'Data Science'}
-                    onClick={handleBoxClick}
+                    onClick={() => {
+                      handleBoxClick();
+                      handleButtonClick('Data Science');
+                    }}
                     onMouseEnter={() => setHoveredButton('Data Science')}
                     onMouseLeave={() => setHoveredButton(null)}
                   >
@@ -199,7 +196,10 @@ function Tracks() {
                 <div style={linkMoreBtn}>
                   <StyledButton
                     selected={selectedButton === 'Core Science'}
-                    onClick={handleBoxClick}
+                    onClick={() => {
+                      handleBoxClick();
+                      handleButtonClick('Core Science');
+                    }}
                     onMouseEnter={() => setHoveredButton('Core Science')}
                     onMouseLeave={() => setHoveredButton(null)}
                   >
@@ -222,7 +222,10 @@ function Tracks() {
                 <div style={linkMoreBtn}>
                   <StyledButton
                     selected={selectedButton === 'Game Development'}
-                    onClick={handleBoxClick}
+                    onClick={() => {
+                      handleBoxClick();
+                      handleButtonClick('Game Development');
+                    }}
                     onMouseEnter={() => setHoveredButton('Game Development')}
                     onMouseLeave={() => setHoveredButton(null)}
                   >
