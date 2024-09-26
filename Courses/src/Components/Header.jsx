@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown'; // Import Dropdown component
-import { useNavigate } from 'react-router-dom';
 
 const navStyle = {
     padding: '21px 20.5px 0',
@@ -69,7 +68,6 @@ function Header() {
     const [isScrollingUp, setIsScrollingUp] = useState(true);
     const [lastScrollTop, setLastScrollTop] = useState(0);
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
-    const navigate = useNavigate();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -96,10 +94,6 @@ function Header() {
         setIsNavbarOpen(!isNavbarOpen);
     };
 
-    const handleBoxClick = () => {
-        navigate('/event');
-    };
-
     return (
         <>
             <Navbar expand="lg" bg="light" className="bg-body-tertiary" style={isScrollingUp ? fixedNavbarStyle : hiddenNavbarStyle}>
@@ -122,20 +116,20 @@ function Header() {
                                     About
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
-                                    <Dropdown.Item href="#mission-vision" style={dropdownItemStyle}>Mission & Vision</Dropdown.Item>
-                                    <Dropdown.Item href="#history" style={dropdownItemStyle}>History</Dropdown.Item>
+                                    <Dropdown.Item href="/headerFilteringContent" style={dropdownItemStyle}>Mission & Vision</Dropdown.Item>
+                                    <Dropdown.Item href="/headerFilteringContent" style={dropdownItemStyle}>History</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
-                            
+
                             {/* Community Dropdown */}
                             <Dropdown>
                                 <Dropdown.Toggle variant="link" id="community-dropdown" style={dropdownHeaderStyle}>
                                     Community
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
-                                    <Dropdown.Item href="#forums" style={dropdownItemStyle}>Forums</Dropdown.Item>
-                                    <Dropdown.Item href="#projects" style={dropdownItemStyle}>Projects</Dropdown.Item>
-                                    <Dropdown.Item href="#workshops-training" style={dropdownItemStyle}>Workshops & Training</Dropdown.Item>
+                                    <Dropdown.Item href="/headerFilteringContent" style={dropdownItemStyle}>Forums</Dropdown.Item>
+                                    <Dropdown.Item href="/headerFilteringContent" style={dropdownItemStyle}>Projects</Dropdown.Item>
+                                    <Dropdown.Item href="/headerFilteringContent" style={dropdownItemStyle}>Workshops & Training</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
 
@@ -145,13 +139,14 @@ function Header() {
                                     News & Events
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
-                                    <Dropdown.Item href="#upcoming-events" style={dropdownItemStyle}>Upcoming Events</Dropdown.Item>
-                                    <Dropdown.Item href="#past-events" style={dropdownItemStyle}>Past Events</Dropdown.Item>
-                                    <Dropdown.Item href="#newsletters" style={dropdownItemStyle}>Newsletters</Dropdown.Item>
-                                    <Dropdown.Item href="#industry-news" style={dropdownItemStyle}>Industry News</Dropdown.Item>
-                                    <Dropdown.Item href="#achievements" style={dropdownItemStyle}>Achievements</Dropdown.Item>
+                                    <Dropdown.Item href="/headerFilteringContent" style={dropdownItemStyle}>Upcoming Events</Dropdown.Item>
+                                    <Dropdown.Item href="/headerFilteringContent" style={dropdownItemStyle}>Past Events</Dropdown.Item>
+                                    <Dropdown.Item href="/headerFilteringContent" style={dropdownItemStyle}>Newsletters</Dropdown.Item>
+                                    <Dropdown.Item href="/headerFilteringContent" style={dropdownItemStyle}>Industry News</Dropdown.Item>
+                                    <Dropdown.Item href="/headerFilteringContent" style={dropdownItemStyle}>Achievements</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

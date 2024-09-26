@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import routes
-import Header from './Components/Header.jsx';
-import Footer from './Components/Footer.jsx'; // Ensure the correct Footer import
-import Banner from './Components/Banner.jsx';
+
+import HeaderContent from './HeaderContent.jsx'
 
 import HomePage from './HomePage.jsx'
 import Subjets from './LinkSubjectPage/Subjects.jsx'
@@ -19,12 +18,11 @@ function App() {
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
         crossorigin="anonymous"
       />
-      <Header />
       
       {/* Routes Setup */}
       <Routes>
         {/* Navbar route */}
-
+        <Route path="/headerFilteringContent" element={<HeaderContent />} />
 
         {/* Home route */}
         <Route path="/" element={<HomePage />} />
