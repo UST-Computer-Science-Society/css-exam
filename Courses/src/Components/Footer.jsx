@@ -43,7 +43,6 @@ const linksStyle = {
   display: 'flex',
   flexDirection: 'column',
   fontSize: '14px',
-  marginBottom: '20px', // Adds space for mobile
 };
 
 const socialStyle = {
@@ -82,29 +81,32 @@ const Footer = () => {
         </button>
       </div>
 
-      <div style={linksStyle}>
-        <h4 style={{ margin: 0 }}>UST Computer Science Society</h4>
-        <p>About Us</p>
-        <p>Community</p>
-        <p>News & Events</p>
-      </div>
+      {/* New parent div for links and social */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', maxWidth: '600px' }}>
+        <div style={linksStyle}>
+          <h4 style={{ margin: 0 }}>UST Computer Science Society</h4>
+          <p>About Us</p>
+          <p>Community</p>
+          <p>News & Events</p>
+        </div>
 
-      <div style={{ ...socialStyle, ...mediaQueryStyles.socialStyle }}>
-        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-          <img src={Email} alt="Email" style={{ width: '20px', marginRight: '10px' }} />
-          <span>Email</span>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-          <img src={Facebook} alt="Facebook" style={{ width: '20px', marginRight: '10px' }} />
-          <span>Facebook</span>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-          <img src={Twitter} alt="Twitter" style={{ width: '20px', marginRight: '10px' }} />
-          <span>Twitter</span>
-        </div>
-        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-          <img src={Instagram} alt="Instagram" style={{ width: '20px', marginRight: '10px' }} />
-          <span>Instagram</span>
+        <div style={{ ...socialStyle, ...mediaQueryStyles.socialStyle }}>
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+            <img src={Email} alt="Email" style={{ width: '20px', marginRight: '10px' }} />
+            <span>Email</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+            <img src={Facebook} alt="Facebook" style={{ width: '20px', marginRight: '10px' }} />
+            <span>Facebook</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+            <img src={Twitter} alt="Twitter" style={{ width: '20px', marginRight: '10px' }} />
+            <span>Twitter</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+            <img src={Instagram} alt="Instagram" style={{ width: '20px', marginRight: '10px' }} />
+            <span>Instagram</span>
+          </div>
         </div>
       </div>
     </footer>
