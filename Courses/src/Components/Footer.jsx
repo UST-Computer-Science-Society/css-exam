@@ -5,21 +5,21 @@ import Twitter from '../assets/images/twitter.png';
 import Instagram from '../assets/images/instagram.png';
 
 const footerStyle = {
-  backgroundColor: '#007bff', // Blue background like the image
+  backgroundColor: '#007bff',
   color: 'white',
   padding: '40px 50px',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
   fontFamily: 'Arial, sans-serif',
-  flexWrap: 'wrap', // Allows wrapping on smaller screens
+  flexWrap: 'wrap',
 };
 
 const logoStyle = {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  marginBottom: '20px', // Adds space for mobile
+  marginBottom: '20px',
 };
 
 const textStyle = {
@@ -84,10 +84,10 @@ const Footer = () => {
       {/* New parent div for links and social */}
       <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', maxWidth: '600px' }}>
         <div style={linksStyle}>
-          <h4 style={{ margin: 0 }}>UST Computer Science Society</h4>
-          <p>About Us</p>
-          <p>Community</p>
-          <p>News & Events</p>
+          <h4 style={{ margin: '10px 0' }}>UST Computer Science Society</h4>
+          <p style={{ margin: '2px' }}>About Us</p>
+          <p style={{ margin: '2px' }}>Community</p>
+          <p style={{ margin: '2px' }}>News & Events</p>
         </div>
 
         <div style={{ ...socialStyle, ...mediaQueryStyles.socialStyle }}>
