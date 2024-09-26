@@ -8,6 +8,8 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 
+import { useNavigate } from 'react-router-dom';
+
 // Custom Hook for media queries
 const useMediaQuery = (query) => {
   const [matches, setMatches] = useState(window.matchMedia(query).matches);
@@ -72,6 +74,7 @@ function Tracks() {
   const isSmallScreen = useMediaQuery('(max-width: 600px)');
   const [selectedButton, setSelectedButton] = useState(null); // State to track selected button
   const [hoveredButton, setHoveredButton] = useState(null); // State to track hovered button
+  const navigate = useNavigate();
 
   const title = {
     color: '#287FEB',
@@ -145,6 +148,10 @@ function Tracks() {
     };
   }, []);
 
+  const handleBoxClick = () => {
+    navigate('/learnmore');
+};
+
   return (
     <>
       <div id="Tracks">
@@ -168,7 +175,7 @@ function Tracks() {
                 <div style={linkMoreBtn}>
                   <StyledButton
                     selected={selectedButton === 'Data Science'}
-                    onClick={() => handleButtonClick('Data Science')}
+                    onClick={handleBoxClick}
                     onMouseEnter={() => setHoveredButton('Data Science')}
                     onMouseLeave={() => setHoveredButton(null)}
                   >
@@ -192,7 +199,7 @@ function Tracks() {
                 <div style={linkMoreBtn}>
                   <StyledButton
                     selected={selectedButton === 'Core Science'}
-                    onClick={() => handleButtonClick('Core Science')}
+                    onClick={handleBoxClick}
                     onMouseEnter={() => setHoveredButton('Core Science')}
                     onMouseLeave={() => setHoveredButton(null)}
                   >
@@ -215,7 +222,7 @@ function Tracks() {
                 <div style={linkMoreBtn}>
                   <StyledButton
                     selected={selectedButton === 'Game Development'}
-                    onClick={() => handleButtonClick('Game Development')}
+                    onClick={handleBoxClick}
                     onMouseEnter={() => setHoveredButton('Game Development')}
                     onMouseLeave={() => setHoveredButton(null)}
                   >

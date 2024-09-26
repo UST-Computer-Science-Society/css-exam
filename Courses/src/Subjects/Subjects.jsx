@@ -5,6 +5,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import SubjectsList from '../../subjects.json';  // Import subjects from the JSON file
 import Chain from '../assets/images/chain.png';
+import { useNavigate } from 'react-router-dom';
 
 // Styles for the Paper component with hover effect
 const Item = styled(Paper)(({ theme }) => ({
@@ -41,6 +42,7 @@ const StyledButton = styled('button')(({ theme, selected }) => ({
 
 // Main component
 function Subjects() {
+    const navigate = useNavigate();
     const title = {
         color: '#287FEB',
         fontFamily: 'Inter, sans-serif',
@@ -65,6 +67,11 @@ function Subjects() {
         setSelectedButton(buttonName);
     };
 
+
+    const handleBoxClick = () => {
+        navigate('/subject');
+    };
+
     const renderSubjects = () => {
         const subjects = SubjectsList[selectedButton];
         if (!subjects || !subjects.subjects) {
@@ -87,7 +94,7 @@ function Subjects() {
                                 <h3 style={{ color: '#287FEB', margin: '15px 0 0px', textAlign: 'left' }}>{subject.code}</h3>
                                 <p style={{ fontWeight: 'bold', margin: '0 0 10px', textAlign: 'left' }}>{subject.name}</p>
                                 <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-                                    <StyledButton selected={false} onClick={() => console.log(`Learn more about ${subject.name}`)}>
+                                    <StyledButton selected={false} onClick={handleBoxClick}>
                                         Learn More
                                     </StyledButton>
                                 </div>

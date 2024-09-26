@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import data from '../../latest.json';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
+import { useNavigate } from 'react-router-dom';
 
 const useMediaQuery = (query) => {
     const [matches, setMatches] = useState(window.matchMedia(query).matches);
@@ -20,6 +21,7 @@ function LatestPage() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [visible, setVisible] = useState(false);
     const isSmallScreen = useMediaQuery('(max-width: 600px)');
+    const navigate = useNavigate();
 
     // Automatically change the post every 10 seconds
     useEffect(() => {
@@ -101,13 +103,20 @@ function LatestPage() {
         };
     }, []);
 
+    const handleBoxClick = () => {
+        navigate('/event');
+    };
+
     return (
         <div id="LatestPage">
             <h1 className={`section-load-left ${visible ? 'section-load-left--visible' : ''}`} style={styles.title}>
                 Latest Posts
             </h1>
             <div style={styles.carouselContainer}>
-                <Box className="section-load-left" sx={{ display: 'flex', justifyContent: 'center' }} style={{ margin: isSmallScreen ? '0 10px' : '0 50px' }}>
+                <Box className="section-load-left" sx={{ display: 'flex', justifyContent: 'center' }} 
+                     style={{ margin: isSmallScreen ? '0 10px' : '0 50px' }}
+                     onClick={handleBoxClick} // Add onClick event
+                >
                     <div style={styles.carousel}>
                         {data.map((post, index) => (
                             <div

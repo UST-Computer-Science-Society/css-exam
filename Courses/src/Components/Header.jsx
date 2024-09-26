@@ -94,7 +94,7 @@ function Header() {
                     <Navbar.Collapse id="basic-navbar-nav" className={`justify-content-lg-between ${isNavbarOpen ? 'show' : ''}`} style={isNavbarOpen ? navStyleMobile : {}}>
                         {/* Right on large screens, centered on mobile */}
                         <Nav className={`d-flex flex-lg-row align-items-lg-center ${isNavbarOpen ? '' : 'justify-content-lg-end'}`} style={isNavbarOpen ? {} : navCollapseStyle}>
-                            <Nav.Link href="#About" style={{ ...navStyle, ...navLinkStyle }}>Home</Nav.Link>
+                            <Nav.Link href="/" style={{ ...navStyle, ...navLinkStyle }}>Home</Nav.Link>
                             <Nav.Link href="#Skill" style={{ ...navStyle, ...navLinkStyle }}>About</Nav.Link>
                             <Nav.Link href="#Projects" style={{ ...navStyle, ...navLinkStyle }}>Community</Nav.Link>
                             <Nav.Link href="#Contacts" style={{ ...navStyle, ...navLinkStyle }}>News & Events</Nav.Link>

@@ -28,9 +28,9 @@ const textStyle = {
   fontSize: '16px',
 };
 
-const buttonStyle = {
+const boxContainer = {
   backgroundColor: '#F0F0F0',
-  color: '#333',
+  color: '#287FEB',
   padding: '8px 12px',
   border: 'none',
   cursor: 'pointer',
@@ -76,9 +76,9 @@ const Footer = () => {
       <div style={{ ...logoStyle, ...mediaQueryStyles.logoStyle }}>
         <h2 style={{ fontSize: '28px', margin: 0 }}>Courses</h2>
         <p style={{ fontSize: '18px', margin: '5px 0' }}>CSS Headliner</p>
-        <button style={buttonStyle}>
-          Passionately designed & developed by CSS
-        </button>
+        <div style={boxContainer}>
+          Passionately designed & developed by CSS 💻
+        </div>
       </div>
 
       {/* New parent div for links and social */}
