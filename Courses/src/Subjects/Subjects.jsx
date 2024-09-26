@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import SubjectsList from '../../subjects.json';  // Import subjects from the JSON file
 import Chain from '../assets/images/chain.png';
 
-// Styles for the Paper component
+// Styles for the Paper component with hover effect
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -15,6 +15,28 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
     borderRadius: '10px',
     boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+    transition: 'box-shadow 0.3s ease',  // Smooth transition for the shadow
+    '&:hover': {
+        boxShadow: '0px 8px 24px rgba(0, 0, 0, 0.2)',  // Shadow on hover
+    },
+}));
+
+// Styles for buttons with hover effect
+const StyledButton = styled('button')(({ theme, selected }) => ({
+    backgroundColor: selected ? '#FF7F0E' : '#6973DB',
+    border: 'none',
+    borderRadius: '10px',
+    color: '#fff',
+    fontSize: '14px',
+    fontFamily: 'Inter, sans-serif',
+    fontWeight: 600,
+    width: '139.5px',
+    height: '48px',
+    cursor: 'pointer',
+    transition: 'background-color 0.3s ease, box-shadow 0.3s ease',
+    '&:hover': {
+        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.2)',  // Shadow on hover
+    },
 }));
 
 // Main component
@@ -38,20 +60,6 @@ function Subjects() {
         gap: '10px',
         marginTop: '20px',
     };
-
-    const buttonStyle = (buttonName) => ({
-        backgroundColor: selectedButton === buttonName ? '#FF7F0E' : '#6973DB',
-        border: 'none',
-        borderRadius: '10px',
-        color: '#fff',
-        fontSize: '14px',
-        fontFamily: 'Inter, sans-serif',
-        fontWeight: 600,
-        width: '139.5px',
-        height: '48px',
-        cursor: 'pointer',
-        transition: 'background-color 0.3s ease',
-    });
 
     const handleButtonClick = (buttonName) => {
         setSelectedButton(buttonName);
@@ -79,13 +87,14 @@ function Subjects() {
                                 <h3 style={{ color: '#287FEB', margin: '15px 0 0px', textAlign: 'left' }}>{subject.code}</h3>
                                 <p style={{ fontWeight: 'bold', margin: '0 0 10px', textAlign: 'left' }}>{subject.name}</p>
                                 <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-                                    <button style={{ ...buttonStyle(subject.code), backgroundColor: '#6973DB' }}>
+                                    <StyledButton selected={false} onClick={() => console.log(`Learn more about ${subject.name}`)}>
                                         Learn More
-                                    </button>
+                                    </StyledButton>
                                 </div>
                             </Item>
                         </Grid>
                     ))}
+
                 </Grid>
             </Box>
         );
@@ -119,22 +128,22 @@ function Subjects() {
     }, []);
 
     return (
-        <div className='section-load-left' style={{marginBottom:'200px'}}>
+        <div className='section-load-left' style={{ marginBottom: '200px' }}>
             <div id="Subjects">
                 <h1 style={title}>Subjects</h1>
                 <p style={{ textAlign: 'center' }}>Choose the specialization below to see the subjects.</p>
             </div>
 
             <div style={buttonContainerStyle}>
-                <button style={buttonStyle('Data Science')} onClick={() => handleButtonClick('Data Science')}>
+                <StyledButton selected={selectedButton === 'Data Science'} onClick={() => handleButtonClick('Data Science')}>
                     Data Science
-                </button>
-                <button style={buttonStyle('Core Science')} onClick={() => handleButtonClick('Core Science')}>
+                </StyledButton>
+                <StyledButton selected={selectedButton === 'Core Science'} onClick={() => handleButtonClick('Core Science')}>
                     Core Science
-                </button>
-                <button style={buttonStyle('Game Development')} onClick={() => handleButtonClick('Game Development')}>
+                </StyledButton>
+                <StyledButton selected={selectedButton === 'Game Development'} onClick={() => handleButtonClick('Game Development')}>
                     Game Development
-                </button>
+                </StyledButton>
             </div>
 
             {renderSubjects()}
