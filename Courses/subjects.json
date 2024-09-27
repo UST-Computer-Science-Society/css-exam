@@ -1,0 +1,67 @@
+{
+    "Data Science": {
+      "subjects": [
+        {
+          "code": "CS ELEC 1C",
+          "name": "Data Warehousing"
+        },
+        {
+          "code": "CS ELEC 2C",
+          "name": "Machine Learning"
+        },
+        {
+          "code": "CS ELEC 3C",
+          "name": "Data Analysis and Visualization"
+        },
+        {
+          "code": "CS ELEC 4C",
+          "name": "Data Mining"
+        }
+      ]
+    },
+    "Core Science": {
+      "subjects": [
+        {
+          "code": "CS ELEC 1A",
+          "name": "Advanced Intelligent Systems"
+        },
+        {
+          "code": "CS ELEC 2C",
+          "name": "Compiler Design"
+        },
+        {
+          "code": "CS ELEC 3C",
+          "name": "Natural Language Processing"
+        },
+        {
+          "code": "CS ELEC 4C",
+          "name": "Empathic Computing"
+        },
+        {
+          "code": "CS ELEC 4C",
+          "name": "Data Mining"
+        }
+      ]
+    },
+    "Game Development": {
+      "subjects": [
+        {
+          "code": "CS ELEC 1B",
+          "name": "Game Theory and Design"
+        },
+        {
+          "code": "CS ELEC 2B",
+          "name": "Game Programming I"
+        },
+        {
+          "code": "CS ELEC 3B",
+          "name": "Game Programming II"
+        },
+        {
+          "code": "CS ELEC 4B",
+          "name": "Game Production"
+        }
+      ]
+    }
+  }
+  
