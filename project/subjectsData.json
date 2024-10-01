@@ -1,0 +1,21 @@
+{
+    "Data Science": [
+      { "subjectCode": "CS ELEC 1C", "subjectName": "Data Warehousing" },
+      { "subjectCode": "CS ELEC 2C", "subjectName": "Machine Learning" },
+      { "subjectCode": "CS ELEC 3C", "subjectName": "Data Analysis and Visualization" },
+      { "subjectCode": "CS ELEC 4C", "subjectName": "Data Mining" }
+    ],
+    "Core Science": [
+      { "subjectCode": "CS ELEC 1A", "subjectName": "Advanced Intelligent Systems" },
+      { "subjectCode": "CS ELEC 2A", "subjectName": "Compiler Design" },
+      { "subjectCode": "CS ELEC 3A", "subjectName": "Natural Language Processing" },
+      { "subjectCode": "CS ELEC 4A", "subjectName": "Empathic Computing" }
+    ],
+    "Game Development": [
+      { "subjectCode": "CS ELEC 1B", "subjectName": "Game Theory and Design" },
+      { "subjectCode": "CS ELEC 2B", "subjectName": "Game Programming I" },
+      { "subjectCode": "CS ELEC 3B", "subjectName": "Game Programming II" },
+      { "subjectCode": "CS ELEC 4B", "subjectName": "Game Production" }
+    ]
+  }
+  

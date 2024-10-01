@@ -1,0 +1,43 @@
+[
+    {
+      "postTitle": "Post 1",
+      "date": "Today"
+    },
+    {
+      "postTitle": "Post 2",
+      "date": "Yesterday"
+    },
+    {
+      "postTitle": "Post 3",
+      "date": "Yesterday"
+    },
+    {
+      "postTitle": "Post 4",
+      "date": "One month ago"
+    },
+    {
+      "postTitle": "Post 5",
+      "date": "Two months ago"
+    },
+    {
+      "postTitle": "Post 6",
+      "date": "Two months ago"
+    },
+    {
+      "postTitle": "Post 7",
+      "date": "03-09-23"
+    },
+    {
+      "postTitle": "Post 8",
+      "date": "A year ago"
+    },
+    {
+      "postTitle": "Post 9",
+      "date": "A year ago"
+    },
+    {
+      "postTitle": "Post 10",
+      "date": "Two years ago"
+    }
+  ]
+  
