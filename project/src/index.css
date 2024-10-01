@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@layer base {
+  h2 {
+    @apply text-h2 text-center text-primary font-extrabold leading-normal;
+  }
+  h3 {
+    @apply text-h3 text-center text-primary font-extrabold m-[13px];
+  }
+  h5 {
+    @apply text-h5 text-center text-neutralblack font-extrabold;
+  }
+  h6 {
+    @apply text-h6 text-neutralblack font-medium;
+  }
+  .b2 {
+    @apply text-b2 text-neutralgray;
+  }
+  .nav-button {
+    @apply text-primary text-[18px] font-bold hover:text-accentorange;
+  }
+}
