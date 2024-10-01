@@ -1,0 +1,497 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    margin-top: 0; 
+}
+
+.buttons {
+    display: flex;
+    gap: 20px; 
+}
+
+button {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    padding: 10px 30px; 
+    font-size: 1.1rem;
+    border-radius: 8px; 
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6973DB;
+}
+
+
+
+section{
+    height: 100vh;
+    
+}
+
+
+
+.logo {
+    font-size: 20px;
+    color: #555;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+
+.main h1 {
+    color: #2979ff;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.main p {
+    color: #888;
+    margin-bottom: 30px;
+}
+
+/* Tracks */
+#tracks {
+    padding: 0px;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+#tracks h2 {
+    font-size: 2.5rem;
+    color: #2979ff; 
+    margin-bottom: 30px;
+}
+
+#tracks p {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    color: #555;
+    line-height: 1.6;
+}
+
+.track-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0px;
+   
+}
+
+.track-card {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.track-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid #6c63ff; 
+}
+
+.track-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.track-card h3 {
+    font-size: 1.5rem;
+    color: #2979ff;
+    margin: 20px;
+}
+
+.track-card p {
+    padding: 0 20px 20px;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+    overflow: hidden; 
+    height: calc(1.5em * 5); 
+}
+
+
+.track-card button.learn-more {
+    display: inline-block;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px auto;
+    width: 80%; 
+}
+
+.track-card button.learn-more:hover {
+    background-color: #6973DB;
+}
+
+.track-card:hover button.learn-more {
+    background-color: #5a57cc;
+}
+
+/* Subject */
+.subjects {
+    margin: 100px auto;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.subjects h2 {
+    color: #2979ff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subjects p {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: #fca311;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-btn:nth-child(2) {
+    background-color: #6c63ff;
+}
+
+.filter-btn:nth-child(3) {
+    background-color: #264653;
+}
+
+.subjects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.subject-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; 
+    text-align: left;
+}
+
+.subject-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.subject-code {
+    color: #2979ff;
+    font-weight: bold;
+}
+
+.subject-name {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.learn-more-btn {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.learn-more-btn:hover {
+    background-color: #555;
+}
+
+
+/*    Banner */
+
+.banner {
+    width: 100%;
+    height: 120px;
+    background-color: #f0f0f0;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    opacity: 0.9;
+    position: relative;
+}
+
+.banner::before {
+    content: "Say Yes to CSS !";
+    font-size: 2rem;
+    color: #250202;
+    opacity: 0.8;
+}
+
+
+/* Latest Page */
+.latestpage {
+  text-align: center;
+  padding: 40px;
+  background-color: #f4f4f4;
+}
+
+.carousel {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; 
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap; 
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.card {
+  width: 22%; 
+  background-color: white;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.carousel-card {
+  position: relative;
+  width: 100%; 
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.carousel-card:hover {
+  transform: scale(1.05);
+}
+
+.carousel-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent); 
+  padding: 15px;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.carousel-card h3 {
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: 1.5em;
+}
+
+.carousel-card p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.indicators {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.indicators .dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicators .dot.active,
+.indicators .dot:hover {
+  background-color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%; 
+    margin-bottom: 20px;
+  }
+  .carousel-card {
+    height: 250px;
+  }
+}
+
+
+
+  
+
+
+
+  .footer {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    padding: 20px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-middle {
+    text-align: center;
+  }
+  
+  .footer-middle h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-middle button {
+    background-color: white;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: none;
+  }
+  
+  .footer-right {
+    text-align: left;
+  }
+  
+  .footer-right h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-right ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-right ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-right ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-right .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .footer-right .social-icons i {
+    margin-right: 5px;
+  }
+  
+  .footer img{
+    height: 100px;
+    width: 100px;
+}
