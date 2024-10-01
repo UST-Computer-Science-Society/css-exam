@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSS Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="img/logo.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">News & Events</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div class="container">
+            <section class="main">
+                <h1>Lorem ipsum dolor sit amet, consectetur adi</h1>
+                <p>incididunt ut labore et dolore magna aliqua</p>
+                <div class="buttons">
+                    <button data-section="tracks">#tracks</button>
+                    <button data-section="subjects">#subjects</button>
+                    <button data-section="latestpage" >#latestpage</button>
+                </div>
+            </section>
+            
+            <div class="banner"></div>
+
+
+            <section id="tracks" class="tracks">
+                <h2>Tracks</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut</p>
+                
+                <div class="track-cards">
+                    <div class="track-card">
+                        <img src="img/image.jpg" alt="Data Science">
+                        <h3>Data Science</h3>
+                        <p class="track-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis metus a consequat gravida. Aliquam egestas et orci nec vestibulum.
+                        </p>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+            
+                    <div class="track-card">
+                        <img src="img/image.jpg" alt="Core Science">
+                        <h3>Core Science</h3>
+                        <p class="track-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis metus a consequat gravida. Aliquam egestas et orci nec vestibulum.
+                        </p>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+            
+                    <div class="track-card">
+                        <img src="img/image.jpg" alt="Game Development">
+                        <h3>Game Development</h3>
+                        <p class="track-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis metus a consequat gravida. Aliquam egestas et orci nec vestibulum.
+                        </p>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                </div>
+            </section>
+            <div class="banner"></div>
+            <section id="subjects" class="subjects">
+                <h2>Subjects</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut</p>
+            
+                <div class="filters">
+                    <button class="filter-btn" onclick="filterSubjects('data-science')">Data Science</button>
+                    <button class="filter-btn" onclick="filterSubjects('core-science')">Core Science</button>
+                    <button class="filter-btn" onclick="filterSubjects('game-development')">Game Development</button>
+                </div>
+            
+                <div class="subjects-grid" id = subjects-grid>
+                     <div class="subject-card">
+                        <img src="img/image.jpg" alt="Theory of Automata">
+                        <p class="subject-code">CS ELEC 1C</p>
+                        <p class="subject-name">Data Warehousing</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+            
+                    <div class="subject-card">
+                        <img src="img/image.jpg" alt="Theory of Automata">
+                        <p class="subject-code">CS ELEC 2C</p>
+                        <p class="subject-name">Machine Learning</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+            
+                    <div class="subject-card">
+                        <img src="img/image.jpg" alt="Theory of Automata">
+                        <p class="subject-code">CS ELEC 3C</p>
+                        <p class="subject-name">Data Analysis and Visualization</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+            
+                    <div class="subject-card">
+                        <img src="img/image.jpg" alt="Theory of Automata">
+                        <p class="subject-code">CS ELEC 4C</p>
+                        <p class="subject-name">Data Mining</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div> 
+            
+                    <div class="subject-card">
+                        <img src="img/image.jpg" alt="Theory of Automata">
+                        <p class="subject-code">CS26111</p>
+                        <p class="subject-name">THEORY OF AUTOMATA</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+            
+                    <div class="subject-card">
+                        <img src="img/image.jpg" alt="Theory of Automata">
+                        <p class="subject-code">CS26114</p>
+                        <p class="subject-name">COLLEGE CALCULUS</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="banner"></div>
+            
+            <section id="latestpage" class="latestpage">
+                <h2>Latest Posts</h2>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="card carousel-card">
+                                <div class="overlay">
+                                    <img src="img/image.jpg" alt="New Year's Day">
+                                    <h3>New Year's Day</h3>
+                                    <p>2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="card carousel-card">
+                                <div class="overlay">
+                                    <img src="img/image.jpg" alt="New Year's Day">
+                                    <h3>New Year's Day</h3>
+                                    <p>12/12/22</p>
+                                </div>
+                            </div>
+                            <div class="card carousel-card">
+                                <div class="overlay">
+                                    <img src="img/image.jpg" alt="New Year's Day">
+                                    <h3>New Year's Day</h3>
+                                    <p>Yesterday</p>
+                                </div>
+                            </div>
+                            <div class="card carousel-card">
+                                <div class="overlay">
+                                    <img src="img/image.jpg" alt="New Year's Day">
+                                    <h3>New Year's Day</h3>
+                                    <p>Wednesday</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="indicators">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+            </section>
+        
+            <footer class="footer">
+                <div class="footer-container">
+                  <div class="footer-middle">
+                    <img src="img/logo.png" alt="logo">
+                    <p>CSS Headliner</p>
+                    <p><button>Passionately designed & developed by CSS</button></p>
+                  </div>
+                  <div class="footer-right">
+                    <h2>UST Computer Science Society</h2>
+                    <ul>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Community</a></li>
+                      <li><a href="#">News & Events</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><i class="fas fa-envelope"></i> Email</a><br>
+                        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a><br>
+                        <a href="#"><i class="fab fa-twitter"></i> Twitter</a><br>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+              
+        <script src="script.js"></script>
+        
+        
+    </body>
+</html>

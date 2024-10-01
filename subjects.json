@@ -1,0 +1,21 @@
+{
+    "data-science": [
+      { "code": "CS ELEC 1C", "name": "Data Warehousing", "img": "img/data_science_1.jpg" },
+      { "code": "CS ELEC 1C", "name": "Machine Learning ", "img": "img/data_science_2.jpg" },
+      { "code": "CS ELEC 1C", "name": "Data Analysis and Visualization", "img": "img/data_science_3.jpg" },
+      { "code": "CS ELEC 1C", "name": "Data Mining", "img": "img/data_science_4.jpg" }
+    ],
+    "core-science": [
+      { "code": "CS ELEC 1A", "name": "Advanced Intelligent Systems", "img": "img/core_science_1.jpg" },
+      { "code": "CS ELEC 2A", "name": "Compiler Design", "img": "img/core_science_2.jpg" },
+      { "code": "CS ELEC 3A", "name": "Natural Language Processing", "img": "img/core_science_3.jpg" },
+      { "code": "CS ELEC 4A", "name": "Empathic Computing", "img": "img/core_science_4.jpg" }
+    ],
+    "game-development": [
+      { "code": "CS ELEC 1B", "name": "Game Theory and Design", "img": "img/game_dev_1.jpg" },
+      { "code": "CS ELEC 2B", "name": "Game Programming I", "img": "img/game_dev_2.jpg" },
+      { "code": "CS ELEC 3B", "name": "Game Programming I", "img": "img/game_dev_3.jpg" },
+      { "code": "CS ELEC 4B", "name": "Game Production", "img": "img/game_dev_4.jpg" }
+    ]
+  }
+  
