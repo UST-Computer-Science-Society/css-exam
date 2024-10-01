@@ -1,0 +1,132 @@
+{
+  "categories": [
+    {
+      "title": "Data Science Subjects",
+      "items": [
+        {
+          "image": "https://via.placeholder.com/500",
+          "title": "CS ELEC 1C",
+          "subtitle": "Data Warehousing",
+          "link": "#"
+        },
+        {
+          "image": "https://via.placeholder.com/500",
+          "title": "CS ELEC 2C",
+          "subtitle": "Machine Learning",
+          "link": "#"
+        },
+        {
+          "image": "https://via.placeholder.com/500",
+          "title": "CS ELEC 3C",
+          "subtitle": "Data Analysis and Visualization",
+          "link": "#"
+        },
+        {
+          "image": "https://via.placeholder.com/500",
+          "title": "CS ELEC 4C",
+          "subtitle": "Data Mining",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "Core Science Subjects",
+      "items": [
+        {
+          "image": "https://via.placeholder.com/500",
+          "title": "CS ELEC 1A",
+          "subtitle": "Advanced Intelligent Systems",
+          "link": "#"
+        },
+        {
+          "image": "https://via.placeholder.com/500",
+          "title": "CS ELEC 2C",
+          "subtitle": "Compiler Design",
+          "link": "#"
+        },
+        {
+          "image": "https://via.placeholder.com/500",
+          "title": "CS ELEC 3C",
+          "subtitle": "Natural Language Processing",
+          "link": "#"
+        },
+        {
+          "image": "https://via.placeholder.com/500",
+          "title": "CS ELEC 4C",
+          "subtitle": "Empathic Computing",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "Game Development Subjects",
+      "items": [
+        {
+          "image": "https://via.placeholder.com/500",
+          "title": "CS ELEC 1B",
+          "subtitle": "Game Theory and Design",
+          "link": "#"
+        },
+        {
+          "image": "https://via.placeholder.com/500",
+          "title": "CS ELEC 2B",
+          "subtitle": "Game Programming I",
+          "link": "#"
+        },
+        {
+          "image": "https://via.placeholder.com/500",
+          "title": "CS ELEC 3B",
+          "subtitle": "Game Programming II",
+          "link": "#"
+        },
+        {
+          "image": "https://via.placeholder.com/500",
+          "title": "CS ELEC 4B",
+          "subtitle": "Game Production",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "Cat Subjects",
+      "items": [
+        {
+          "image": "https://cdn2.thecatapi.com/images/BkksyH95Z.jpg",
+          "title": "CS CAT 1A",
+          "subtitle": "The Art of Purring",
+          "link": "#"
+        },
+        {
+          "image": "https://cdn2.thecatapi.com/images/e3u.jpg ",
+          "title": "CS CAT 2B",
+          "subtitle": "Advanced Napping Techniques",
+          "link": "#"
+        },
+        {
+          "image": "https://cdn2.thecatapi.com/images/1jv.jpg",
+          "title": "CS CAT 3C",
+          "subtitle": "Mastering the Laser Pointer",
+          "link": "#"
+        },
+        {
+          "image": "https://cdn2.thecatapi.com/images/318.jpg",
+          "title": "CS CAT 4D",
+          "subtitle": "Scratching Post Design",
+          "link": "#"
+        },
+        {
+          "image": "https://cdn2.thecatapi.com/images/dnb.jpg",
+          "title": "Fourth Post",
+          "subtitle": "Meow meow",
+          "link": "#"
+        },
+        {
+          "image": "https://cdn2.thecatapi.com/images/cgv.jpg",
+          "title": "Cute cats",
+          "subtitle": "I land on my feet",
+          "link": "#"
+        }
+      ]
+    }
+  ]
+}
