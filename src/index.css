@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@base {
+    @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        src: url('./fonts/Nunito-Regular.ttf') format('ttf');
+    }
+
+    @font-face {
+        font-family: 'Nunito';
+        font-weight: 700;
+        src: url('./fonts/Nunito-Bold.ttf') format('ttf');
+    }
+
+    @font-face {
+        font-family: 'Nunito';
+        font-weight: 800;
+        src: url('./fonts/Nunito-ExtraBold.ttf') format('ttf');
+    }
+
+    @font-face {
+        font-family: 'Nunito';
+        font-weight: 500;
+        src: url('./fonts/Nunito-Medium.ttf') format('ttf');
+    }
+}
+
+@layer components {
+    .section,
+    .subjects-main {
+        @apply flex flex-col;
+        @apply sm:h-fit;
+    }
+
+    .nav-wrapper {
+        @apply flex justify-center;
+    }
+
+    .nav-logo-wrapper {
+        @apply lg:w-1/2 flex items-center py-4 px-8 ml-7;
+    }
+
+    .navigations-wrapper {
+        @apply grow p-6 justify-end flex max-lg:hidden;
+    }
+
+    .navigation-item > a {
+        @apply block text-primary font-nunito font-bold text-center text-lg cursor-pointer;
+        @apply  hover:text-white hover:bg-primary hover:transition-all px-6 py-4;
+    }
+
+    .nav-wrapper.side {
+        @apply lg:hidden h-max w-max;
+    }
+
+    .menu-button-wrapper {
+        @apply absolute -right-9 top-2 bg-white shadow-gray-300 shadow-sm;
+    }
+
+    .menu-button {
+        @apply lg:hidden m-2 hover:scale-110 z-10;
+    }
+
+    .sidebar {
+        @apply lg:hidden transition-all flex flex-col bg-white fixed shadow-lg h-full left-0 top-0 z-10 m-0;
+    }
+
+    .sidebar-heading {
+        @apply flex;
+    }
+
+    .sidebar-title {
+        @apply text-p22 text-primary font-bold text-center w-full py-4;
+    }
+
+    .home-content {
+        @apply w-full flex flex-col items-center pt-40;
+    }
+
+    .home-title {
+        @apply lg:text-p66 max-lg:text-[2rem] text-primary font-extrabold leading-[120%] lg:w-[720px] mx-[20px] text-center;
+    }
+
+    .home-sub-container,
+    .track-main {
+        @apply flex justify-center;
+    }
+
+    .home-subtitle {
+        @apply text-base text-p22 font-medium max-lg:text-center max-lg:mx-2;
+    }
+
+    .home-buttons {
+        @apply text-white bg-purplecss p-3 font-bold rounded-p10 text-base translate-y-0;
+        @apply hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all;
+    }
+
+    .section-title {
+        @apply text-primary font-extrabold text-p52 text-center p-12;
+    }
+
+    .tracks-wrapper {
+        @apply grid grid-cols-track w-[1316px] gap-10 px-[50px];
+    }
+
+    .track {
+        @apply h-fit w-full flex flex-col items-center;
+    }
+
+    .track-img {
+        @apply object-cover w-full lg:h-64 md:h-72 rounded-[35px];
+    }
+
+    .track-name {
+        @apply text-p26 font-bold text-center text-ellipsis mt-6;
+    }
+
+    .track-description {
+        @apply text-base text-center h-[120px] text-graycss text-ellipsis overflow-hidden;
+    }
+
+    .learn-more,
+    .subject-button {
+        @apply text-p18 text-white bg-purplecss font-bold px-4 py-2 mt-12 rounded-p10;
+        @apply translate-y-0 hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all;
+    }
+
+    .subjects-subtitle {
+        @apply text-base text-p22 font-medium lg:px-8 max-lg:px-16 lg:text-start max-lg:text-center;
+    }
+
+    .subject-button-wrapper {
+        @apply flex lg:flex-row max-lg:flex-col mt-16;
+    }
+
+    .subject-wrapper {
+        @apply h-fit bg-lgraycss pb-8 rounded-p20;
+    }
+
+    .subject-img-wrapper {
+        @apply rounded-p20 overflow-hidden;
+    }
+
+    .subject-img {
+        @apply object-cover w-full h-96;
+    }
+
+    .subject-code {
+        @apply text-p26 text-primary font-bold ml-6 mt-6;
+    }
+
+    .subject-title {
+        @apply text-p22 font-medium text-base ml-6;
+    }
+
+    .subject-learn {
+        @apply text-p18 text-white bg-purplecss font-bold px-4 py-2 rounded-p10 mr-6;
+        @apply translate-y-0 hover:shadow-gray-400 hover:shadow-lg hover:-translate-y-1.5 hover:transition-all;
+    }
+
+    .subjects-wrapper {
+        @apply grid grid-cols-subject gap-11 mt-12 px-[5%] max-lg:h-fit;
+    }
+
+    .carousel-wrapper {
+        @apply flex flex-col overflow-x-hidden lg:w-p1580 max-lg:w-[300px];
+    }
+
+    .carousel-extend {
+        @apply flex max-lg:hidden transition-transform ease-out duration-1000;
+    }
+
+    .carousel-extend-small {
+        @apply lg:hidden max-lg:flex w-fit transition-transform ease-out duration-1000 shadow-lg h-fit;
+    }
+
+    .slide {
+        @apply lg:flex max-lg:hidden gap-16 px-16;
+    }
+
+    .small-slide {
+        @apply lg:hidden max-lg:flex;
+    }
+
+    .post-wrapper {
+        @apply lg:flex max-lg:hidden flex-col bg-post w-p315 h-p315 justify-end p-6 transition-all hover:scale-110;
+    }
+
+    .post-wrapper-small {
+        @apply lg:hidden w-[290px] h-p315 bg-post flex flex-col justify-end p-6 transition-all hover:scale-110 mx-[5px];
+    }
+
+    .post-heading {
+        @apply text-white text-p22 font-medium;
+    }
+
+    .posted {
+        @apply text-base text-white;
+    }
+
+    .indicators-main {
+        @apply flex justify-center p-16;
+    }
+
+    .indicators-wrapper {
+        @apply flex gap-8;
+    }
+
+    .indicator {
+        @apply rounded-full w-5 h-5;
+    }
+
+    .footer {
+        @apply flex lg:flex-row  max-lg:flex-col lg:h-p211 lg:items-baseline max-lg:items-center bg-primary p-10;
+    }
+
+    .footer-brand {
+        @apply lg:w-1/2 flex flex-col justify-evenly lg:items-start max-lg:items-center mb-4;
+    }
+
+    .footer-logo {
+        @apply text-p26 font-bold text-white;
+    }
+
+    .footer-headliner {
+        @apply text-base text-white;
+    }
+
+    .passionately-wrapper {
+        @apply bg-white px-4 py-1 rounded-lg w-fit;
+    }
+    
+    .passionately {
+        @apply text-base text-primary lg:text-left max-lg:text-center;
+    }
+
+    .contacts-wrapper {
+        @apply flex lg:flex-row max-lg:flex-col justify-between w-1/3;
+    }
+
+    .other-pages {
+        @apply flex flex-col max-lg:gap-4 lg:gap-1 justify-evenly lg:mb-4 max-lg:mb-8;
+    }
+
+    .other-page {
+        @apply text-white text-p18 lg:text-start max-lg:text-center;
+    }
+
+    .accounts-wrapper {
+        @apply flex flex-col lg:gap-2 max-lg:gap-4 justify-start lg:items-start max-lg:items-center;
+    }
+
+    .account {
+        @apply flex w-fit;
+    }
+
+    .account img {
+        @apply w-6 h-6;
+    }
+
+    .account-text {
+        @apply text-base text-white ml-2 lg:text-start sm:text-center grow;
+    }
+}

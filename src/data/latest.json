@@ -1,0 +1,92 @@
+{
+    "slides": [
+        [
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "2 days ago"
+            },
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "12/12/22"
+            },
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "Yesterday"
+            },
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "Wednesday"
+            }
+        ],
+        [
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "3 days ago"
+            },
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "10/28/22"
+            },
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "Last weekend"
+            },
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "Thursday"
+            }
+        ],
+        [
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "4 days ago"
+            },
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "10/10/22"
+            },
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "Last Month"
+            },
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "Saturday"
+            }
+        ],
+        [
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "10 days ago"
+            },
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "10/12/22"
+            },
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "Last year"
+            },
+            {
+                "src": "./images/latest.jpg",
+                "heading": "New Year's Day",
+                "posted": "Tuesday"
+            }
+        ]
+    ]
+}
